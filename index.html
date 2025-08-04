@@ -8,7 +8,86 @@
 </head>
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
-        <!-- FORM FIELDS HERE -->
+      <fieldset class="form-wrap">
+        <legend>Personal Information</legend>
+        <dl class="form-box">
+          <dt>Name:</dt>
+          <dd><input type="text"></dd>
+          <dt>Email:</dt>
+          <dd><input type="email" required></dd>
+          <dt>Password</dt>
+          <dd><input type="password" minlength="12" pattern="[a-zA-Z0-9]{12,}"></dd>
+          <dt>Date of Birth</dt>
+          <dd><input type="date"></dd>
+        </dl>
+      </fieldset>
+      <fieldset class="form-wrap">
+        <legend>Preferences</legend>
+        <dl class="form-box">
+          <dt>Favorite Color:</dt>
+          <dd><input type="color" class="form-color"></dd>
+          <dt>Hobby:</dt>
+          <dd>
+            <input type="text" list="hobby" class="form-hobby">
+            <datalist id="hobby">
+              <option value="Drawing">
+              <option value="Swimming">
+              <option value="Dancing">
+            </datalist>
+          </dd>
+          <dt>Experience Level:</dt>
+          <dd><input type="range" class="form-level"></dd>
+        </dl>
+      </fieldset>
+      <fieldset class="form-wrap">
+        <legend>Contact Preferences</legend>
+        <dl class="form-box">
+          <dt>Preferred Contact Method:</dt>
+          <dd>
+            <select name="contact">
+              <option value="Email">Email</option>
+              <option value="Phone">Phone</option>
+              <option value="Mail">Mail</option>
+            </select>
+          </dd>
+          <dt>Subscribe to Newsletter:</dt>
+          <dd class="form-checkbox"><input type="checkbox" name="subscribe"></dd>
+        </dl>
+      </fieldset>
+      <fieldset class="form-wrap">
+        <legend>Preferences</legend>
+        <dl class="form-box">
+          <dt>Gender:</dt>
+          <dd class="form-gender">
+            <ul>
+              <li><input type="radio" name="gender" value="Male" id="gender-male"><label for="gender-male">Male</label></li>
+              <li><input type="radio" name="gender" value="Female" id="gender-female"><label for="gender-female">Female</label></li>
+              <li><input type="radio" name="gender" value="Other" id="gender-other"><label for="gender-other">Other</label></li>
+            </ul>
+          </dd>
+        </dl>
+      </fieldset>
+      <fieldset class="form-wrap">
+        <legend>More Information</legend>
+        <dl class="form-box">
+          <dt>Bio:</dt>
+          <dd><textarea name="" id=""></textarea></dd>
+        </dl>
+      </fieldset>
+      <fieldset class="form-wrap">
+        <legend>Upload Documents</legend>
+        <dl class="form-box">
+          <dt>Resume and other certificates</dt>
+          <dd><input type="file" multiple accept=".doc, .docx, .pdf, .jpg, .png"></dd>
+        </dl>
+      </fieldset>
+      <fieldset class="form-wrap">
+        <legend>Submission</legend>
+        <div class="form-btn">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </fieldset>
     </form>
 </body>
 </html>

@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+}
+dl,
+dd{
+  margin: 0;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+input,
+select,
+textarea{
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.form{
+  &-wrap{
+    border: 1px solid #ddd;
+    padding: 20px 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    +.form-wrap{
+      margin-top: 40px;
+    }
+    legend{
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 3px 6px;
+      background: #fff;
+      position: absolute;
+      top: -15px;
+      left: 10px;
+    }
+  }
+  &-box{
+    dt{
+      margin-bottom: 8px;
+    }
+    dd{
+      +dt{
+        margin-top: 10px;
+      }
+    }
+    textarea{
+      min-height: 100px;
+    }
+  }
+  &-color{
+    min-height: 40px;
+  }
+  &-hobby{
+    border-color: #333;
+    width: 200px;
+  }
+  &-level{
+    width: 180px;
+  }
+  &-checkbox,
+  &-gender{
+    input{
+      width: auto;
+    }
+  }
+  &-gender{
+    li{
+      +li{
+        margin-top: 10px;
+      }
+    }
+  }
+  &-btn{
+    input{
+      width: 80px;
+      padding: 8px;
+      background: dodgerblue;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

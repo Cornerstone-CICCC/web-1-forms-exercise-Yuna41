@@ -1,3 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.form-wrap {
+  border: 1px solid #ddd;
+  padding: 20px 10px 15px;
+  border-radius: 10px;
+  position: relative;
+}
+.form-wrap + .form-wrap {
+  margin-top: 40px;
+}
+.form-wrap legend {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 3px 6px;
+  background: #fff;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+.form-box dt {
+  margin-bottom: 8px;
+}
+.form-box dd + dt {
+  margin-top: 10px;
+}
+.form-box textarea {
+  min-height: 100px;
+}
+.form-color {
+  min-height: 40px;
+}
+.form-hobby {
+  border-color: #333;
+  width: 200px;
+}
+.form-level {
+  width: 180px;
+}
+.form-checkbox input, .form-gender input {
+  width: auto;
+}
+.form-gender li + li {
+  margin-top: 10px;
+}
+.form-btn input {
+  width: 80px;
+  padding: 8px;
+  background: dodgerblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
